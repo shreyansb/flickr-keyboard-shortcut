@@ -1,0 +1,18 @@
+{
+  // Required
+  "name": "Flickr Keyboard Shortcuts",
+  "version": "0.2.9",
+
+  // Recommended
+  "description": "adds a few keyboard shortcuts to flickr",
+
+  // Add any of these that you need
+  "content_scripts": [
+		{
+			"matches":["http://flickr.com/photos/*", "http://www.flickr.com/photos/*"],
+			"js":["fks.js"],
+			"all_frames": true
+		}
+	],
+  "update_url": "http://srb.ag/fks"
+}
